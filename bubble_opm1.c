@@ -31,13 +31,13 @@ int bubble(int* a,int size)
 {
 	int i,j,count,noswap_cnt = 0,flag=0,ext_loop = 0;
 	count = 0;
-	for(j=0;j<(size-1-j);j++)  
+	for(j=0;j<(size-1);j++)  
 	{
 		//外
 		ext_loop++;
 		noswap_cnt = 0;
 		
-	for(i=0;i<(size-1);i++)
+	for(i=0;i<(size-1-j);i++)
 	{
 			
 			
