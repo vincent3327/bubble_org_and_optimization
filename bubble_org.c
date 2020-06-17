@@ -18,7 +18,7 @@ void bubble(int* a,int size)
 	int i,j;
 	for(j=0;j<(size-1);j++)
 	{
-		for(i=0;i<(size-1);i++)
+		for(i=0;i<(size-1-j);i++)
 		{
 			if(*(a+i+1)<*(a+i))
 			{

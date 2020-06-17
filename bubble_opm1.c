@@ -31,11 +31,11 @@ int bubble(int* a,int size)
 {
 	int i,j,count,noswap_cnt = 0,flag=0,ext_loop = 0;
 	count = 0;
-	for(j=0;j<(size-1);j++)  
+	for(j=0;j<(size-1-j);j++)  
 	{
 		//外
 		ext_loop++;
-		//noswap_cnt = 0;
+		noswap_cnt = 0;
 		
 	for(i=0;i<(size-1);i++)
 	{
@@ -44,9 +44,6 @@ int bubble(int* a,int size)
 			if((*(a+i+1))>(*(a+i)))
 				{
 					swap((a+i),(a+i+1));//注意：这里要传址
-					//flag = 1;
-					noswap_cnt = 0;
-					//printf("count now is %d\n",count);
 				}
 				else
 				{
